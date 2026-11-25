@@ -1,6 +1,6 @@
 # ALFA Build 21 clickable mock
 
-Standalone, fictional, not production. This folder is completely separate from any ALFA application repository.
+Standalone, fictional, not production. This repository is completely separate from any ALFA application repository. It does not send, book, or buy anything.
 
 Three interactive ideas on an iPhone-sized screen (390×844), framed as a phone on desktop and full-screen on mobile:
 
@@ -8,7 +8,9 @@ Three interactive ideas on an iPhone-sized screen (390×844), framed as a phone 
 2. **Share** — mock Safari and Photos share sheets with an ALFA destination. A shared link or screenshot becomes an editable question, then a calm answer.
 3. **Morning** — “Your overnight work is done,” with **How this was checked** expanding to show which labs agreed or disagreed.
 
-Open `index.html` locally, or visit the deployed public URL. Query flags for screenshots:
+Open `index.html` locally, or visit the public URL in the latest release notes.
+
+Query flags for deep links:
 
 - `/?s=confirm`
 - `/?s=confirm&state=edit`
@@ -23,3 +25,5 @@ Open `index.html` locally, or visit the deployed public URL. Query flags for scr
 - `/?s=share&phase=answer`
 - `/?s=morning`
 - `/?s=morning&checked=1`
+
+All names, messages, and places in the mock are fictional sample data.

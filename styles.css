@@ -40,6 +40,7 @@ button, input, textarea {
 }
 button { cursor: pointer; }
 button:disabled { cursor: default; opacity: 0.45; }
+[hidden] { display: none !important; }
 textarea, input { width: 100%; }
 
 .stage {
@@ -810,3 +811,30 @@ textarea, input { width: 100%; }
 /* Screenshot helper: hide stage caption when compositing tight crops */
 body.shot-tight .stage { padding: 28px; }
 body.shot-tight .stage-caption { display: none; }
+
+/* Fit the expanded morning check list on one iPhone screen */
+#screen-morning .screen-head { margin-bottom: 12px; }
+#screen-morning .wordmark { margin-bottom: 8px; }
+#screen-morning .screen-head h1 { font-size: 28px; margin-bottom: 0; }
+#screen-morning .morning-card { padding: 16px 16px 12px; }
+#screen-morning .morning-card h2 { font-size: 22px; margin-bottom: 6px; }
+#screen-morning .morning-card p { font-size: 13.5px; }
+#screen-morning .brief-points { margin: 10px 0 2px; }
+#screen-morning .brief-points li { padding: 6px 0 6px 16px; font-size: 13.5px; }
+#screen-morning .brief-points li::before { top: 13px; }
+#screen-morning .fineprint { margin: 10px 0 4px; }
+#screen-morning .check-toggle { margin-top: 10px; padding: 12px 14px; }
+#screen-morning .checks { padding: 0 14px 6px; }
+#screen-morning .checks li { padding: 6px 0; }
+#screen-morning .checks li p { margin-top: 2px; font-size: 12.5px; line-height: 1.4; }
+
+#confirm-card[data-state="edit"] .edit-form { gap: 8px; }
+#confirm-card[data-state="edit"] .edit-form textarea { min-height: 0; }
+#screen-confirm:has(#confirm-card[data-state="edit"]) .lede { display: none; }
+#screen-confirm:has(#confirm-card[data-state="edit"]) .screen-head { margin-bottom: 10px; }
+#screen-confirm:has(#confirm-card[data-state="edit"]) .screen-head h1 { margin-bottom: 0; }
+
+#screen-morning:has(#checks:not([hidden])) .brief-points,
+#screen-morning:has(#checks:not([hidden])) .morning-card .fineprint {
+  display: none;
+}

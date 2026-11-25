@@ -45,7 +45,7 @@
                 <div class="mail">
                   <div class="mail-row"><span>To</span><strong>Mara Ellison</strong></div>
                   <div class="mail-row mute"><span></span><em>mara.ellison@northline.example</em></div>
-                  <div class="mail-row"><span>Subject</span><strong id="email-subject-view">Thursday workshop, moving to 2pm</strong></div>
+                  <div class="mail-row"><span>Subject</span><strong id="email-subject-view">Thursday workshop — 2pm</strong></div>
                   <div class="mail-body" id="email-body-view">Mara,<br /><br />I can move Thursday’s workshop to 2pm so it no longer overlaps with your board prep. The room is already held. If 2pm is tight, I can look at Friday morning instead.<br /><br />I’ll wait for your note either way.</div>
                 </div>
               </div>
@@ -86,10 +86,10 @@
                   <input type="text" name="address" value="mara.ellison@northline.example" />
                 </label>
                 <label>Subject
-                  <input type="text" name="subject" value="Thursday workshop, moving to 2pm" />
+                  <input type="text" name="subject" value="Thursday workshop — 2pm" />
                 </label>
                 <label>Message
-                  <textarea name="body" rows="7">Mara,
+                  <textarea name="body" rows="5">Mara,
 
 I can move Thursday’s workshop to 2pm so it no longer overlaps with your board prep. The room is already held. If 2pm is tight, I can look at Friday morning instead.
 
@@ -236,10 +236,9 @@ I’ll wait for your note either way.</textarea>
           <section class="card morning-card">
             <p class="kicker">Workshop brief</p>
             <h2>A quieter structure for Thursday</h2>
-            <p>I finished the brief on Thursday’s workshop agenda. The stronger shape is a short arrival, one worked example, and time left at the end to talk — not a second walkthrough.</p>
+            <p>The stronger shape for Thursday’s workshop is a short arrival, one worked example, and time left at the end to talk — not a second walkthrough.</p>
             <ul class="brief-points">
               <li>Open with a single question, not a full agenda in the first five minutes.</li>
-              <li>Keep the demonstration to one example, and stay with it long enough to be useful.</li>
               <li>Leave twenty minutes at the close for discussion.</li>
             </ul>
             <p class="fineprint">The brief is waiting in your notes. Nothing was sent overnight.</p>
@@ -303,15 +302,21 @@ I’ll wait for your note either way.</textarea>
             </div>
             <div class="app-row" aria-label="Share destinations">
               <button type="button" class="app-icon" disabled>
-                <span class="glyph green"> </span>
+                <span class="glyph green">
+                  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M4.5 6.5h15a1 1 0 0 1 1 1v9.2a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1V7.5a1 1 0 0 1 1-1zm2.2 2.1 5.3 3.4 5.3-3.4-.9-1.3-4.4 2.8-4.4-2.8-.9 1.3z"/></svg>
+                </span>
                 <em>Messages</em>
               </button>
               <button type="button" class="app-icon" disabled>
-                <span class="glyph blue"> </span>
+                <span class="glyph blue">
+                  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M5 7.2 12 12.4 19 7.2V6H5v1.2zm14 1.7-7 5.2-7-5.2V18h14V8.9zM4 4.5h16a1 1 0 0 1 1 1V18a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18V5.5a1 1 0 0 1 1-1z"/></svg>
+                </span>
                 <em>Mail</em>
               </button>
               <button type="button" class="app-icon" disabled>
-                <span class="glyph yellow"> </span>
+                <span class="glyph yellow">
+                  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#3a2a00" d="M7 4.5h7.2L19 9.3V19a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 6 19V6a1.5 1.5 0 0 1 1.5-1.5H7zm7 1.2v3.8h3.8L14 5.7zM8.5 12h7v1.2h-7V12zm0 3h7v1.2h-7V15z"/></svg>
+                </span>
                 <em>Notes</em>
               </button>
               <button type="button" class="app-icon alfa" data-share-to-alfa>
@@ -319,7 +324,7 @@ I’ll wait for your note either way.</textarea>
                 <em>ALFA</em>
               </button>
               <button type="button" class="app-icon" disabled>
-                <span class="glyph grey"> </span>
+                <span class="glyph grey"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#fff" d="M12 4.5a6.5 6.5 0 0 1 6.5 6.5c0 2.4-1.3 4.4-2.6 5.8-.5.5-.9.9-1.2 1.2H9.3c-.3-.3-.7-.7-1.2-1.2C6.8 15.4 5.5 13.4 5.5 11A6.5 6.5 0 0 1 12 4.5zm-3.2 14h6.4c.2.6.3 1 .3 1.3 0 1.1-1.4 1.7-3.5 1.7s-3.5-.6-3.5-1.7c0-.3.1-.7.3-1.3z"/></svg></span>
                 <em>Reminders</em>
               </button>
             </div>

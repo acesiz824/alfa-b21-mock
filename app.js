@@ -277,11 +277,6 @@
     }
     if (name === "morning") {
       setChecks(!!opts.checked);
-      if (opts.checked) {
-        window.setTimeout(() => {
-          checks.scrollIntoView({ block: "nearest" });
-        }, 50);
-      }
     }
     if (!opts.silentHash) {
       const params = new URLSearchParams();
